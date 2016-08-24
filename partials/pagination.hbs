@@ -1,0 +1,14 @@
+{{! -- Add Pagination -- }}
+<div class="pagination">
+  {{#if next}}
+    <a class="pagination-item older" href="{{page_url next}}"><< Prev Article</a>
+  {{else}}
+    <span class="pagination-item older" ><< Prev Article</span>
+  {{/if}}
+
+  {{#if prev}}
+    <a class="pagination-item newer" href="{{page_url prev}}"> Next Article >></a>
+  {{else}}
+    <span class="pagination-item newer" > Next Article >></span>
+  {{/if}}
+</div>

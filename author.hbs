@@ -1,0 +1,53 @@
+{{!< layout}}
+{{!-- The tag above means - insert everything in this file into the {body} of the layout.hbs template --}}
+
+{{!-- The big featured header --}}
+
+{{!-- Everything inside the #author tags pulls data from the author --}}
+{{#author}}
+
+    <section class="author">
+        {{#if image}}
+        <figure class="author-img {{#if cover}}" style="background-image: url({{cover}}){{/if}}">
+          <div class="author-img-dot">
+            <img src="{{image}}" alt="{{name}}'s Picture"/>
+          </div>
+        </figure>
+        {{/if}}
+
+        <blockquote>
+          <h3 style="margin-top: 42px;">{{name}}</h3>
+          {{#if bio}}
+            <h5 style="margin-top: -22px;">{{bio}}</h5>
+          {{/if}}
+        </blockquote>
+        <div class="socials {{slug}}">
+          <a href="#" class="sb-email" target="_blank" alt="Email"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="sb-facebook" target="_blank" alt="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="sb-twitter" target="_blank" alt="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="sb-dribbble" target="_blank" alt="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" class="sb-google-plus" target="_blank" alt="Google+"><i class="fa fa-google-plus"></i> </a>
+          <a href="#" class="sb-pinterest" target="_blank" alt="Pinterest"><i class="fa fa-pinterest-p"></i> </a>
+          <a href="#" class="sb-vimeo" target="_blank" alt="Vimeo"><i class="fa fa-vimeo"></i> </a>
+          <a href="#" class="sb-dropbox" target="_blank" alt="Dropbox"><i class="fa fa-dropbox"></i> </a>
+          <a href="#" class="sb-wechat" target="_blank" alt="Wechat"><i class="fa fa-weixin"></i> </a>
+          <a href="#" class="sb-yahoo" target="_blank" alt="Yahoo"><i class="fa fa-yahoo"></i></a>
+          <a href="#" class="sb-youtube" target="_blank" alt="YouTube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <hr />
+        <div style="padding: 0; margin-top: -20px;">
+          {{#if location}}<i class="fa fa-location-arrow"></i> {{location}}<br />{{/if}}
+          {{#if website}}<a href="{{website}}"><i class="fa fa-link"></i> {{website}}</a> {{/if}}
+          <span> <i class="fa fa-list-alt"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+        </div>
+        <hr />
+    </section>
+{{/author}}
+
+{{!-- The main content area on the homepage --}}
+<section style="margin-top: -50px;">
+
+    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
+    {{> "loop"}}
+
+</section>

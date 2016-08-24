@@ -1,0 +1,17 @@
+{{!< layout}}
+{{!-- The tag above means - insert everything in this file into the {body} of the layout.hbs template --}}
+
+{{!-- The main content area on the homepage --}}
+<section>
+    {{#tag}}
+    <p>
+      Show {{name}}
+      <br />
+      {{#if tag.description}}{{tag.description}}{{else}}A collection of {{../pagination.total}} Articles{{/if}}
+    </p>
+    <hr>
+    {{/tag}}
+
+  {{> "loop"}}
+
+</section>

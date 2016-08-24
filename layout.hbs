@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{!-- Document Settings --}}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{!-- Page Meta --}}
+  <title>{{#if post}}
+      {{meta_title}} &middot; {{@blog.title}}
+    {{else}}
+      {{#if author}}
+        {{meta_title}}
+      {{else}}
+        {{meta_title}} &middot; Home
+      {{/if}}
+    {{/if}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  {{!-- Mobile Meta --}}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{!-- Brand icon --}}
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+  {{!-- Style --}}
+  <link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}">
+  <link rel="stylesheet" href="{{asset "css/styles.css"}}">
+  <link rel="stylesheet" href="{{asset "css/pygment_trac.css"}}">
+  <link rel="stylesheet" href="{{asset "css/youtube.css"}}">
+  {{!-- Ghost outputs important style and meta data with this tag --}}
+  {{ghost_head}}
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="blog-logo">
+        {{#if @blog.logo}}
+          <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{else}}
+          <a href="{{@blog.url}}">{{@blog.title}}</a>
+        {{/if}}
+      </h1>
+      <p class="blog-desc">{{@blog.description}}</p>
+
+      {{navigation}}
+
+      <div class="sidebar">
+
+        <div class="display">
+          <h5 class="sidebar-title">Tags Category</h5>
+          {{#get "tags"}}
+            {{#foreach tags}}
+              <a href="{{url}}">{{name}}</a>
+            {{/foreach}}
+          {{/get}}
+        </div>
+
+        <div class="display socials">
+          <h5 class="sidebar-title">Socials</h5>
+          <a href="#" class="sb-email" id="B_email" target="_blank" alt="Email"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="sb-facebook" id="B_facebook" target="_blank" alt="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="sb-twitter" id="B_twitter" target="_blank" alt="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="sb-dribbble" id="B_dribble" target="_blank" alt="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" class="sb-google-plus" id="B_googleplus" target="_blank" alt="Google+"><i class="fa fa-google-plus"></i> </a>
+          <a href="#" class="sb-pinterest" id="B_pinterest" target="_blank" alt="Pinterest"><i class="fa fa-pinterest-p"></i> </a>
+          <a href="#" class="sb-vimeo" id="B_vimeo" target="_blank" alt="Vimeo"><i class="fa fa-vimeo"></i> </a>
+          <a href="#" class="sb-dropbox" id="B_dropbox" target="_blank" alt="Dropbox"><i class="fa fa-dropbox"></i> </a>
+          <a href="#" class="sb-wechat" id="B_wechat" target="_blank" alt="Wechat"><i class="fa fa-weixin"></i> </a>
+          <a href="#" class="sb-yahoo" id="B_yahoo" target="_blank" alt="Yahoo"><i class="fa fa-yahoo"></i></a>
+          <a href="#" class="sb-youtube" id="B_youtube" target="_blank" alt="YouTube"><i class="fa fa-youtube"></i></a>
+
+          <!--
+          <a href="#" class="sb-email" alt="Email"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="sb-behance" alt="Behance"><i class="fa fa-behance"></i></a>
+          <a href="#" class="sb-bitbucket" alt="BitBucket"><i class="fa fa-bitbucket"></i></a>
+          <a href="#" class="sb-codepen" alt="Codepen"><i class="fa fa-codepen"></i></a>
+          <a href="#" class="sb-deviantart" alt="Devianart"><i class="fa fa-deviantart"></i></a>
+          <a href="#" class="sb-digg" alt="Digg"><i class="fa fa-digg"></i></a>
+          <a href="#" class="sb-dribbble" alt="Dribbble"><i class="fa fa-dribbble"></i></a>
+          <a href="#" class="sb-dropbox" alt="Dropbox"><i class="fa fa-dropbox"></i></a>
+          <a href="#" class="sb-facebook" alt="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="sb-flickr" alt="Flickr"><i class="fa fa-flickr"></i></a>
+          <a href="#" class="sb-foursquare" alt="Foursquare"><i class="fa fa-foursquare"></i></a>
+          <a href="#" class="sb-github" alt="Github"><i class="fa fa-github-alt"></i></a>
+          <a href="#" class="sb-google-plus" alt="Google+"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="sb-instagram" alt="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="sb-jsfiddle" alt="JSFiddle"><i class="fa fa-jsfiddle"></i></a>
+          <a href="#" class="sb-lastfm" alt="LastFM"><i class="fa fa-lastfm"></i></a>
+          <a href="#" class="sb-linkedin" alt="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="sb-paypal" alt="PayPal"><i class="fa fa-paypal"></i></a>
+          <a href="#" class="sb-pinterest" alt="Pinterest"><i class="fa fa-pinterest-p"></i></a>
+          <a href="#" class="sb-reddit" alt="Reddit"><i class="fa fa-reddit"></i></a>
+          <a href="#" class="sb-skype" alt="Skype"><i class="fa fa-skype"></i></a>
+          <a href="#" class="sb-soundcloud" alt="SoundCloud"><i class="fa fa-soundcloud"></i></a>
+          <a href="#" class="sb-stackoverflow" alt="StackOverflow"><i class="fa fa-stack-overflow"></i></a>
+          <a href="#" class="sb-steam" alt="Steam"><i class="fa fa-steam"></i></a>
+          <a href="#" class="sb-stumbleupon" alt="Stumbleupon"><i class="fa fa-stumbleupon"></i></a>
+          <a href="#" class="sb-trello" alt="Trello"><i class="fa fa-trello"></i></a>
+          <a href="#" class="sb-tumblr" alt="Tumblr"><i class="fa fa-tumblr"></i></a>
+          <a href="#" class="sb-twitch" alt="Twitch"><i class="fa fa-twitch"></i></a>
+          <a href="#" class="sb-twitter" alt="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="sb-vimeo" alt="Vimeo"><i class="fa fa-vimeo"></i></a>
+          <a href="#" class="sb-vine" alt="Vine"><i class="fa fa-vine"></i></a>
+          <a href="#" class="sb-vk" alt="Vkontakte"><i class="fa fa-vk"></i></a>
+          <a href="#" class="sb-wechat" alt="Wechat"><i class="fa fa-weixin"></i></a>
+          <a href="#" class="sb-wordpress" alt="WordPress"><i class="fa fa-wordpress"></i></a>
+          <a href="#" class="sb-xing" alt="Xing"><i class="fa fa-xing"></i></a>
+          <a href="#" class="sb-yahoo" alt="Yahoo"><i class="fa fa-yahoo"></i></a>
+          <a href="#" class="sb-yelp" alt="Yelp"><i class="fa fa-yelp"></i></a>
+          <a href="#" class="sb-youtube" alt="YouTube"><i class="fa fa-youtube"></i></a>
+          -->
+        </div>
+
+
+      </div>
+
+    </header>
+
+    {{{body}}}
+
+    <footer>
+      <p><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}. All rights reserved</p>
+      <p><small>Proudly published with <a href="https://ghost.org">Ghost</a> | Theme by <a href="#">Yudi Andela</a></small></p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="{{asset "js/scale.fix.js"}}"></script>
+  {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+  <script type="text/javascript" src="{{asset "js/jquery-2.1.4.min.js"}}" ></script>
+  {{!-- Ghost outputs important scripts and data with this tag --}}
+  {{ghost_foot}}
+  <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+</body>
+</html>
