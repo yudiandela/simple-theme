@@ -21,38 +21,36 @@ No demo for today
 
 ## USE
 ## Settings
-
-- Create [Api key Disqus](https://disqus.com/api/docs/)
 - You have to enable via a checkbox on the labs page in your Ghost admin panel.
 
 ``` html
 <script type="text/javascript">  
   /** No Display fiil in zero **/
   /** Blog Socials Media Link **/
-  var blogemail        = "yourmail@mail.com",
-      blogfacebook      = "https://",
-      blogtwitter       = "https://",
-      blogdribble       = "https://",
-      bloggoogleplus    = "https://",
-      blogpinterest     = "https://",
-      blogvimeo         = "https://",
-      blogdropbox       = "https://",
-      blogwechat      	= "https://",
-      blogyahoo       = "https://",
-      blogyoutube      	= "https://",
+  var blogemail           = "yourmail@mail.com",
+      blogfacebook        = "https://",
+      blogtwitter         = "https://",
+      blogdribble         = "https://",
+      bloggoogleplus      = "https://",
+      blogpinterest       = "https://",
+      blogvimeo           = "https://",
+      blogdropbox         = "https://",
+      blogwechat          = "https://",
+      blogyahoo           = "https://",
+      blogyoutube         = "https://",
       
   /** Author Socials Media Link **/
-      email		      	= "yourmail@mail.com",
-      facebook      	= "https://",
-      twitter       	= "https://",
-      dribbble       	= "https://",
-      googleplus    	= "https://",
-      pinterest     	= "https://",
-      vimeo         	= "https://",
-      dropbox       	= "https://",
-      wechat      		= "https://",
-      yahoo     	  = "https://",
-      youtube      		= "https://";
+      email           = "yourmail@mail.com",
+      facebook        = "https://",
+      twitter         = "https://",
+      dribbble        = "https://",
+      googleplus      = "https://",
+      pinterest       = "https://",
+      vimeo           = "https://",
+      dropbox         = "https://",
+      wechat          = "https://",
+      yahoo           = "https://",
+      youtube         = "https://";
   /** End of variable insert semicolon **/
  </script>
 ```
