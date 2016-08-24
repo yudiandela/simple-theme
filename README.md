@@ -1,1 +1,1 @@
-# jekkyl-theme-clone
+# Jekkyl Theme Clone
