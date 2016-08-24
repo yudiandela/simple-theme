@@ -29,7 +29,7 @@ No demo for today
 <script type="text/javascript">  
   /** No Display fiil in zero **/
   /** Blog Socials Media Link **/
-  var blogemail      	  = "yourmail@mail.com",
+  var blogemail        = "yourmail@mail.com",
       blogfacebook      = "https://",
       blogtwitter       = "https://",
       blogdribble       = "https://",
@@ -38,7 +38,7 @@ No demo for today
       blogvimeo         = "https://",
       blogdropbox       = "https://",
       blogwechat      	= "https://",
-      blogyahoo     	  = "https://",
+      blogyahoo       = "https://",
       blogyoutube      	= "https://",
       
   /** Author Socials Media Link **/
@@ -51,7 +51,7 @@ No demo for today
       vimeo         	= "https://",
       dropbox       	= "https://",
       wechat      		= "https://",
-      yahoo     		  = "https://",
+      yahoo     	  = "https://",
       youtube      		= "https://";
   /** End of variable insert semicolon **/
  </script>
