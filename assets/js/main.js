@@ -1,5 +1,6 @@
 /** Main function javascript **/
 $(document).ready(function(){
+  $(".post").fitVids();
   /** socials media link by blog **/
   $("#B_email").attr( "href", function() {
     if(blogemail === ""){
