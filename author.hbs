@@ -23,8 +23,12 @@
         </blockquote>
         <div class="socials {{slug}}">
           <a href="#" class="sb-email" target="_blank" alt="Email"><i class="fa fa-envelope"></i></a>
-          <a href="#" class="sb-facebook" target="_blank" alt="Facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="sb-twitter" target="_blank" alt="Twitter"><i class="fa fa-twitter"></i></a>
+          {{#if facebook}}
+          <a href="{{facebook_url}}" class="sb-facebook" target="_blank" alt="Facebook"><i class="fa fa-facebook"></i></a>
+          {{/if}}
+          {{#if twitter}}
+          <a href="{{twitter_url}}" class="sb-twitter" target="_blank" alt="Twitter"><i class="fa fa-twitter"></i></a>
+          {{/if}}
           <a href="#" class="sb-dribbble" target="_blank" alt="Dribbble"><i class="fa fa-dribbble"></i></a>
           <a href="#" class="sb-google-plus" target="_blank" alt="Google+"><i class="fa fa-google-plus"></i> </a>
           <a href="#" class="sb-pinterest" target="_blank" alt="Pinterest"><i class="fa fa-pinterest-p"></i> </a>
