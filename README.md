@@ -15,7 +15,7 @@ No demo for this day.
 - Tags Category
 - Related post
 - Post format Video --> New Features
-- YouTube, Vimeo, kickstarter --> Video Responsive
+- YouTube, Vimeo, kickstarter, etc --> Video Responsive
 
 ### Copyright & License
 
