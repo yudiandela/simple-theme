@@ -22,7 +22,7 @@ No demo for this day.
 ### Socials link
 Adding this script in to code Injection
 
-''' html
+```html
 <script type="text/javascript">
 // blog socials link
 var blogemail 		= 'your.mail@blog-site.com',
@@ -50,7 +50,7 @@ var email 		= 'your.mail@author.com',
     yahoo 		= 'https://yahoo_link',
     youtube 	= 'https://youtube_link';    
 </script>
-'''
+```
 
 ## Copyright & License
 
