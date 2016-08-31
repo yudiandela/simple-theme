@@ -52,9 +52,6 @@ var email 		= 'your.mail@author.com',
 </script>
 ''''
 
-## Image Post Format
-if you want to have a image format, you only have to add a tag `#image` the image Featured will move to large size
-
 ## Copyright & License
 
 Copyright (c) 2016 Yudi Andela - Released under the [MIT license](LICENSE).
