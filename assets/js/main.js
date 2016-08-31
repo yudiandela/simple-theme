@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".post").fitVids();
   /** socials media link by blog **/
   $("#B_email").attr( "href", function() {
-    if(blogemail === true){
+    if(blogemail === ""){
       $(this).hide();
     }
     return "mailto:" + blogemail;
