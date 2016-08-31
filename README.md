@@ -12,9 +12,10 @@ No demo for this day.
 - Blog navigation
 - Cover images for author
 - Social media links ( Blog and Author )
+- Custom error page --> New
 - Tags Category
 - Related post
-- Post format Video --> New Features
+- Post format Video --> New
 - YouTube, Vimeo, kickstarter, etc --> Video Responsive
 
 ## How to us
