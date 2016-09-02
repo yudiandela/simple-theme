@@ -43,7 +43,16 @@
 
       <div class="sidebar">
 
-        <div class="display">
+        <div class="display form">
+          <form class="search" method="POST" action="#">
+            <input type="text" name="search" value="" placeholder="Search..."/>
+            <button type="submit">SEARCH</button>
+          </form>
+        </div>
+
+        <div class="display"></div>
+
+        <div class="display tags">
           <h5 class="sidebar-title">Tags Category</h5>
           {{#get "tags"}}
             {{#foreach tags}}
