@@ -1,7 +1,7 @@
 /** Main function javascript **/
 (function(){
   'use strict';
-})()
+})();
 
 
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
   $(".post").fitVids();
   /** socials media link by blog **/
   $("#B_email").attr( "href", function() {
-    if(blogemail === ""){
+    if(isNaN(blogemail)){
       $(this).hide();
     }
     return "mailto:" + blogemail;
