@@ -3,5 +3,10 @@
     {{#foreach navigation}}
       <li><a href="{{url absolute="true"}}" class="{{#if current}} current-nav{{/if}}" >{{label}}</a></li>
     {{/foreach}}
+
+    <form class="search" method="POST" action="#">
+      <input type="text" name="search" value="" placeholder="Search..."/>
+      <button type="submit">SEARCH</button>
+    </form>
   </ul>
 </nav>
