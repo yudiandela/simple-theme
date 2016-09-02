@@ -34,7 +34,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
 	color:#222;
-	margin:0 0 20px;
+	margin:0;
 }
 
 p, ul, ol, table, pre, dl {
@@ -400,7 +400,7 @@ nav li a.active:hover {
 /* Post Content */
 
 .post-content ul {
-	margin: 0;
+	margin: 0 0 20px;
 	margin-left: -22px;
 }
 
