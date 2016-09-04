@@ -1,81 +1,106 @@
 /** Main function javascript **/
-(function(){
-  'use strict';
-})();
-
-
-
-
-
-
 $(document).ready(function(){
+
   $(".post").fitVids();
+
   /** socials media link by blog **/
   $("#B_email").attr( "href", function() {
-    if(isNaN(blogemail)){
-      $(this).hide();
+    if (typeof blogemail === "undefined") {
+        $(this).hide();
     }
-    return "mailto:" + blogemail;
+    else {
+       return "mailto:" + blogemail;
+    }
   });
+
   $("#B_facebook").attr( "href", function() {
-    if(blogfacebook === ""){
+    if (typeof blogfacebook === "undefined") {
       $(this).hide();
     }
-    return blogfacebook;
+    else {
+      return blogfacebook;
+    }
   });
+
   $("#B_twitter").attr( "href", function() {
-    if(blogtwitter === ""){
+    if (typeof blogtwitter === "undefined") {
       $(this).hide();
     }
-    return blogtwitter;
+    else {
+      return blogtwitter;
+    }
   });
+
   $("#B_dribble").attr( "href", function() {
-    if(blogdribble === ""){
-      $(this).hide();
+    if (typeof blogdribble === "undefined") {
+        $(this).hide();
     }
-    return blogdribble;
+    else {
+       return blogdribble;
+    }
   });
+
   $("#B_googleplus").attr( "href", function() {
-    if(bloggoogleplus === ""){
+    if (typeof bloggoogleplus === "undefined") {
       $(this).hide();
     }
-    return bloggoogleplus;
+    else {
+      return bloggoogleplus;
+    }
   });
+
   $("#B_pinterest").attr( "href", function() {
-    if(blogpinterest === ""){
+    if (typeof blogpinterest === "undefined") {
       $(this).hide();
     }
-    return blogpinterest;
+    else {
+      return blogpinterest;
+    }
   });
+
   $("#B_vimeo").attr( "href", function() {
-    if(blogvimeo === ""){
+    if (typeof blogvimeo === "undefined") {
       $(this).hide();
     }
-    return blogvimeo;
+    else {
+      return blogvimeo;
+    }
   });
+
   $("#B_dropbox").attr( "href", function() {
-    if(blogdropbox === ""){
+    if (typeof blogdropbox === "undefined") {
       $(this).hide();
     }
-    return blogdropbox;
+    else {
+      return blogdropbox;
+    }
   });
+
   $("#B_wechat").attr( "href", function() {
-    if(blogwechat === ""){
+    if (typeof blogwechat === "undefined") {
       $(this).hide();
     }
-    return blogwechat;
+    else {
+      return blogwechat;
+    }
   });
+
   $("#B_yahoo").attr( "href", function() {
-    if(blogyahoo === ""){
+    if (typeof blogyahoo === "undefined") {
       $(this).hide();
     }
-    return blogyahoo;
+    else {
+      return blogyahoo;
+    }
   });
+
   $("#B_youtube").attr( "href", function() {
-    if(blogyoutube === ""){
+    if (typeof blogyoutube === "undefined") {
       $(this).hide();
     }
-    return blogyoutube;
+    else {
+      return blogyoutube;
+    }
   });
 
   /** socials media link by author **/
