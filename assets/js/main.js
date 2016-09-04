@@ -107,70 +107,92 @@ $(document).ready(function(){
   $(".author div.socials a").attr( "href", function(e) {
     switch (e) {
       case 0:
-        if(email === ""){
+        if (typeof email === "undefined") {
           $(this).hide();
         }
-        return "mailto:" + email;
+        else {
+          return "mailto:" + email;
+        }
         break;
       case 1:
-        if(facebook === ""){
+        if (typeof facebook === "undefined") {
           $(this).hide();
         }
-        return facebook;
+        else {
+          return facebook;
+        }
         break;
       case 2:
-        if(twitter === ""){
+        if(typeof twitter === "undefined"){
           $(this).hide();
         }
-        return twitter;
+        else {
+          return twitter;
+        }
         break;
       case 3:
-        if(dribbble === ""){
+        if(typeof dribbble === "undefined"){
           $(this).hide();
         }
-        return dribbble;
+        else {
+          return dribbble;
+        }
         break;
       case 4:
-        if(googleplus === ""){
+        if(typeof googleplus === "undefined"){
           $(this).hide();
         }
-        return googleplus;
+        else {
+          return googleplus;
+        }
         break;
       case 5:
-        if(pinterest === ""){
+        if(typeof pinterest === "undefined"){
           $(this).hide();
         }
-        return pinterest;
+        else {
+          return pinterest;
+        }
         break;
       case 6:
-        if(vimeo === ""){
+        if(typeof vimeo === "undefined"){
           $(this).hide();
         }
-        return vimeo;
+        else {
+          return vimeo;
+        }
         break;
       case 7:
-        if(dropbox === ""){
+        if(typeof dropbox === "undefined"){
           $(this).hide();
         }
-        return dropbox;
+        else {
+          return dropbox;
+        }
         break;
       case 8:
-        if(wechat === ""){
+        if(typeof wechat === "undefined"){
           $(this).hide();
         }
-        return wechat;
+        else {
+          return wechat;
+        }
         break;
       case 9:
-        if(yahoo === ""){
+        if(typeof yahoo === "undefined"){
           $(this).hide();
         }
-        return yahoo;
+        else {
+          return yahoo;
+        }
         break;
       case 10:
-        if(youtube === ""){
+        if(typeof youtube === "undefined"){
           $(this).hide();
         }
-        return youtube;
+        else {
+          return youtube;
+        }
         break;
     }
   });
