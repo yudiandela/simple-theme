@@ -1,4 +1,4 @@
-# Jekkyl-theme-clone for [Ghost](https://github.com/tryghost/ghost/) by Yudi Andela
+# Simple theme for [Ghost](https://github.com/tryghost/ghost/) by M Yusza Mahardika
 
 [![Ghost version](https://img.shields.io/badge/Ghost-0.9.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
 [![Node version](https://img.shields.io/node/v/uno-zen.svg?style=flat-square)](https://nodejs.org/en/)
@@ -55,4 +55,4 @@ var email 		= 'your.mail@author.com',
 
 ## Copyright & License
 
-Copyright (c) 2016 Yudi Andela - Released under the [MIT license](LICENSE).
+Copyright (c) 2016 M Yusza Mahardika - Released under the [MIT license](LICENSE).
