@@ -13,7 +13,7 @@ No demo for this day.
 - Cover images for author
 - Social media links ( Blog and Author )
 - Custom error page --> New
-- Search form --> New
+- Search form --> New By [ghostHunter](https://github.com/Windyo/ghostHunter.git)
 - Tags Category
 - Related post
 - Post format Video --> New
