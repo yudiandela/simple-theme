@@ -3,6 +3,14 @@ $(document).ready(function(){
 
   $(".post").fitVids();
 
+  $("#search-field").ghostHunter({
+    results         : "#results",
+    result_template : "<a href='{{link}}'>{{title}}</a>",
+    onKeyUp   : true,
+    displaySearchInfo   : false
+  });
+
+
   /** socials media link by blog **/
   $("#B_email").attr( "href", function() {
     if (typeof blogemail === "undefined") {

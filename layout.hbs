@@ -45,9 +45,10 @@
 
         <div class="display form">
           <form class="search" method="POST" action="#">
-            <input type="text" name="search" value="" placeholder="Search..."/>
+            <input id="search-field" type="text" name="search" value="" placeholder="Search..."/>
             <button type="submit">SEARCH</button>
           </form>
+          <div id="results"></div>
         </div>
 
         <div class="display"></div>
@@ -81,6 +82,8 @@
 
     </header>
 
+
+
     {{{body}}}
 
     <footer>
@@ -92,6 +95,7 @@
   <script type="text/javascript" src="{{asset "js/scale.fix.js"}}"></script>
   {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
   <script type="text/javascript" src="{{asset "js/jquery-2.1.4.min.js"}}" ></script>
+  <script type="text/javascript" src="{{asset "js/ghostHunter/jquery.ghostHunter.min.js"}}"></script>
   {{!-- Ghost outputs important scripts and data with this tag --}}
   {{ghost_foot}}
   <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
