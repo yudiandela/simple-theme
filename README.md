@@ -1,6 +1,7 @@
 # Simple theme for [Ghost](https://github.com/tryghost/ghost/) by M Yusza Mahardika
 
-[![Ghost version](https://img.shields.io/badge/Ghost-0.9.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
+![Version](https://img.shields.io/badge/v0.0.5-Simple%20Ghost%20Theme-brightgreen.svg?style=flat-square)
+[![MinGhostVersion](https://img.shields.io/badge/Min%20Ghost%20v.-%3E%3D%200.9.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
 [![Node version](https://img.shields.io/node/v/uno-zen.svg?style=flat-square)](https://nodejs.org/en/)
 
 ## Free theme for Ghost
