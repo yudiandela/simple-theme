@@ -1,4 +1,4 @@
-# Simple theme for [Ghost](https://github.com/tryghost/ghost/) by M Yusza Mahardika
+# Simple theme for [Ghost](https://github.com/tryghost/ghost/)
 
 [![Version](https://img.shields.io/badge/Version-v0.0.5-brightgreen.svg?style=flat-square)](https://github.com/yusza/simple-theme)
 [![MinGhostVersion](https://img.shields.io/badge/Min%20Ghost%20-%5E0.9.x-brightgreen.svg?style=flat-square)](https://ghost.org/)
